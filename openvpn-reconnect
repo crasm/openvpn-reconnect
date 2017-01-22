@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$(id -u)" != 0 ]; then
+	>&2 echo "$0 must be run with root privileges!"
+	exit 1
+fi
+pkill --signal SIGHUP --exact openvpn
