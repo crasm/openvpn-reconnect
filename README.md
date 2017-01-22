@@ -1,7 +1,7 @@
 OpenVPN Reconnect
 =================
 
-A simple script for reconnecting openvpn.
+A systemd hook for reconnecting OpenVPN after suspend.
 
 If openvpn is not currently running, it will not be started.
 
